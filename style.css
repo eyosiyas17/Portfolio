@@ -166,11 +166,13 @@ section{
 }
 .section-text-p1{
     font-size: 1.75rem;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
+   
 }
 .title{
     font-size: 3rem;
     text-align: center;
+    
 }
 #socials-container{
     display: flex;
@@ -378,6 +380,7 @@ footer{
 }
 footer p{
     text-align: center;
+    margin-top: 2rem;
 
 }
 
