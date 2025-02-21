@@ -152,8 +152,13 @@ section{
 }
 .section-text p{
     font-weight: 600;
+    
 
     
+}.section-text-p3{
+    text-align: center;
+    font-size: 1.75rem;
+
 }
 .section-text-p1{
     text-align: center;
@@ -190,15 +195,15 @@ section{
     width: 8rem;
     border-radius: 2rem;
 }
-.btn-color1,btn-color2{
+.btn-color1,.btn-color2{
     border: rgb(53,53,53) 0.1 solid;
 
 }
-.btn-color1:hover,btn-color2:hover{
+.btn-color1:hover,.btn-color2:hover{
     cursor: pointer;
 
 }
-.btn-color1,btn-color2:hover{
+.btn-color1,.btn-color2:hover{
     background: rgb(53,53,53);
     color: white;
 }
@@ -224,6 +229,7 @@ section{
     gap: 2rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    
 }
 .about-details-container{
     justify-content: center;
@@ -255,7 +261,7 @@ section{
 }
 .section-container{
     gap: 4rem;
-    height80%;
+    height:80%;
 }
 .section-pic-container{
     height: 400px;

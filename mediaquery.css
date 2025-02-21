@@ -1,82 +1,96 @@
-@media screen and (max-width:1400px) {
-    #profile{
+/* Adjust for screens less than 1400px */
+@media screen and (max-width: 1400px) {
+    #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-containers{
-        flex-wrap: wrap;
-    }
-    
 }
 
-
-@media screen and (max-width:1200px) {
-    #desktop-nav{
+/* Adjust for screens less than 1200px */
+@media screen and (max-width: 1200px) {
+    #desktop-nav {
         display: none;
     }
-    #ham-nav{
+    #ham-nav {
         display: flex;
     }
-    #experience,.experience-details-container{
+    #experience, .experience-details-container {
         margin-top: 2rem;
     }
-    #profile,section-containe{
+    #profile, .section-container {
         display: block;
     }
-    .arrow{
+    .arrow {
         display: none;
     }
-    section,.section-container{
+    section, .section-container {
         height: fit-content;
     }
-    section{
-        margin:0 5%;
+    section {
+        margin: 0 5%;
     }
-    .section-pic-container{
+    .section-pic-container {
         width: 275px;
         height: 275px;
         margin: 0 auto 2rem;
     }
-    .about-container{
-        margin-top: 0;
+    .about-containers {
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items */
     }
-    
-}@media screen and (max-width:600px) {
-    #contact,footer{
-        height: 40vh;
+    .details-container {
+        width: 45%; /* Adjust width for two items per row */
+        margin-bottom: 2rem; /* Add space between rows */
     }
-    #profile{
-        height: 83vh;
+    .section-text-p3 {
+        margin-top: 6rem;
+    }
+}
+
+/* Adjust for screens less than 600px */
+@media screen and (max-width: 600px) {
+    #contact, footer {
+        height: auto;
+        margin-top: 3rem;
+    }
+    #profile {
+        height: auto;
         margin-bottom: 2rem;
     }
-    .about-container,.contact-info-upper-container,.btn-containe{
-        flex-wrap:wrap ;
+    .about-containers, .contact-info-upper-container, .btn-container {
+        flex-wrap: wrap;
     }
-    .contact-info-container p,.nav-links li a{
-        font-size:1.25rem;
-         
+    .contact-info-container p, .nav-links li a {
+        font-size: 1.25rem;
     }
-    .logo{
+    .logo {
         font-size: 1.5rem;
     }
-    .nav-links{
+    .nav-links {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
-    .section-pic-container{
-        width: auto;
+    .section-pic-container {
+        width: 100%;
         height: 46vh;
         justify-content: center;
     }
-    .section-text-p2{
+    .section-text-p2 {
         font-size: 1.25rem;
     }
-    .title{
+    .title {
         font-size: 2rem;
     }
-    .text-continer{
+    .text-container {
         text-align: justify;
     }
-    
+    .details-container {
+        width: 100%; /* Full width for one item per row */
+        margin-bottom: 2rem; /* Add space between rows */
+    }
+    footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+    }
 }
