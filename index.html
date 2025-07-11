@@ -1,317 +1,462 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY PORTFOLIO</title>
-    <link rel ="stylesheet" href="style.css">
-    <link rel ="stylesheet" href="mediaquery.css">
+    <title>Eyosiyas - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">EYOSIYAS</div>
-        <div>
-            <ul class ="nav-links">
-                <li><a href="#about">About </a></li>
-                <li><a href="#experience">Experience</a> </li>
-                <li><a href="#project">Project </a></li>
-                <li><a href="#contact">Contact</a> </li>
-            </ul> 
+    <!-- Cursor elements -->
+    <div class="cursor"></div>
+    <div class="cursor-follow"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">EYOSIYAS</span>
+                <div class="logo-dot"></div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </div>
     </nav>
-    <nav id="ham-nav">
-        <div class="logo">EYOSIYAS</div>
-        <div class="ham-menu">
-            <div class="ham-icon" onclick="togglemenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                    <li><a href="#about" onclick="togglemenu()">About </a></li>
-                    <li><a href="#experience" onclick="togglemenu()">Experience</a> </li>
-                    <li><a href="#project" onclick="togglemenu()">Project </a></li>
-                    <li><a href="#contact" onclick="togglemenu()">Contact</a> </li>
-            </div>
-        </div>
 
-         
-    </nav>
-    <section id="profile">
-        <div class="section-pic-container">
-          <img   src ="./assets/profile-pic.png" alt="eyosiyas">
-        </div>
-        <div class="section-text">
-            <p class="section-text-p1">Hello,i'm</p>
-            <h1 class ="title">eyosiyas</h1>
-            <p class="section-text-p2">FRONTEND DEVELOPER</p>
-            <div class ="btn-container">
-                <button class="btn btn-color2" onclick="window.open('./assets/eyosiyasresume.pdf')" >download cv</button>
-                <button class="btn btn-color1" onclick="location.href='./#contact'" >contact info</button>
-            </div>
-            <div id="socials-container">
-                
-                <img src="./assets/github.png" alt="my Github" class="icon" onclick="location.href='https://github.com/E7777778'">
-                <img src="./assets/linkedin.png" alt="my linkedin" class="icon" target="_blank" onclick="location.href='https://www.linkedin.com/in/eyosiyas-bizuayehu-8383b1262/'">
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class="section-text-p3">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section-pic-container">
-                <img src="./assets/profile-pic.png" alt="profile" class="about-pic">
-                
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                       
-                        <img src="./assets/experience.png"
-                         alt="experienceicon" 
-                        class="icon">
-                    <h3>Experience</h3>
-                    <p>2+ years<br> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" 
-                        alt="education icon"
-                         class="icon">
-                        <h3>Education</h3>
-                        <p>Bachelors Degree</p>
-                    </div>
-        </div>
-        <div class="text-container">
-            <p>I’m <b>Eyosiyas Bizuayehu,</b> a passionate web developer with over <b>2+ years</b> of experience building dynamic, user-friendly websites. 
-                I specialize in both front-end and back-end development, focusing on delivering high-quality, seamless user experiences. 
-                I thrive on bringing creative ideas to life while ensuring functionality and design work harmoniously. 
-                Always eager to expand my skill set, I’m excited to continue evolving as a developer and contribute to innovative, impactful projects.</p>
-        </div>
-        </div>
-        </div>
-
-            <img src="./assets/arrow.png" 
-            alt="Arrow icon" 
-            class="icon arrow" 
-            onclick="location.href='./#experience'">
-            
-        
-    </section>
-    <section id="experience">
-        <p class="section-text-p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-<div class="experience-details-container">
-    <div class="about-containers">
-            <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                       
-                    </div>
-            </div>
-            <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>PostgreSQl</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Node Js</h3>
-                                <p>Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Express js</h3>
-                                <p>Experience</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png"
-                            alt="experience icon"
-                            class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        
-                   
-            </div>
-        </div>
-    </div>
-</div>
-        <img src="./assets/arrow.png" 
-        alt="Arrowicon" class="icon arrow" 
-        onclick="location.href='./#project'">
-
-    </section>
-    <section id ="project">
-        <p class="section-text-p1"> Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-1.jpg"
-                    alt="project1" 
-                    class="project-img">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="greeting">Hello, I'm</p>
+                <h1 class="hero-name">
+                    <span class="name-part">EYOSIYAS</span>
+                    <span class="name-part">BIZUAYEHU</span>
+                </h1>
+                <div class="typing-wrapper">
+                    <span class="typing-text">Frontend Developer</span>
+                    <span class="cursor-typing">|</span>
                 </div>
-                <h2 class="experience-sub-title project-title">Project One</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color2 project-btn" 
-                    onclick="location.href='https://github.com/eyosiyas17/Digital_Marketing_Agency'">
-                        Github
-                    </button>
-                    <button class="btn btn-color2 project-btn" onclick="location.href='https://digitalagecy.netlify.app/'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-        
-       
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-2.jpg"
-                    alt="project-2" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project Two</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
-                        Live demo
-                    </button>
-                </div>
-            </div>
-        
-        
-            <div class="details-container color-container">
-                <div class="article-container">
-                    <img src="./assets/project-3.jpg" alt="project3" class="project-img">
-                </div>
-                <h2 class="experience-sub-title project-title">Project Three</h2>
-                <div class="btn-container">
-                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
-                        Github
-                    </button>
-                    <button class="btn btn-color2 project-btn" onclick="location.href='https://github.com'">
-                        Live Demo
-                    </button>
-                </div>
-            </div>
-            </div>
-            </div>
-        
-    
-        <img src="./assets/arrow.png" 
-        alt="Arrowicon" 
-        class="icon arrow" onclick="location.href='./#contact'">
-
-    </section>
-    <section id="contact">
-        <p class="section-text-p1">Get in Touch</p>
-        <h1 class="title"></h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" 
-                alt="email icon"
-                class="icon contact-icon email-icon">
-                <p><a href="mailto:eyosib84@gmail.com">eyosib84@gmail.com</a></p>
-
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" 
-                alt="linkedin icon"
-                class="icon contact-icon">
-                <p>
-                    <a href="https://www.linkedin.com/in/eyosiyas-bizuayehu-8383b1262/" target="_blank">LinkedIn</a>
+                <p class="hero-description">
+                    Passionate web developer with 2+ years of experience creating beautiful, 
+                    functional websites that deliver exceptional user experiences.
                 </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Get In Touch
+                    </a>
+                    <a href="./assets/EYOSIYAS BIZUAYEHU 1_2.pdf" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-download"></i>
+                        Download CV
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/E7777778" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eyosiyas-bizuayehu-8383b1262/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                    <div class="shape shape-4"></div>
+                </div>
+                <div class="code-animation">
+                    <div class="code-line">
+                        <span class="code-keyword">const</span> 
+                        <span class="code-variable">developer</span> 
+                        <span class="code-operator">=</span> 
+                        <span class="code-bracket">{</span>
+                    </div>
+                    <div class="code-line code-indent">
+                        <span class="code-variable">name</span><span class="code-operator">:</span> 
+                        <span class="code-string">'Eyosiyas'</span><span class="code-operator">,</span>
+                    </div>
+                    <div class="code-line code-indent">
+                        <span class="code-variable">skills</span><span class="code-operator">:</span> 
+                        <span class="code-bracket">[</span><span class="code-string">'React'</span><span class="code-operator">,</span> 
+                        <span class="code-string">'JS'</span><span class="code-bracket">]</span><span class="code-operator">,</span>
+                    </div>
+                    <div class="code-line code-indent">
+                        <span class="code-function">code</span><span class="code-bracket">()</span> 
+                        <span class="code-operator">=></span> 
+                        <span class="code-string">'magic'</span>
+                    </div>
+                    <div class="code-line">
+                        <span class="code-bracket">}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get To Know More</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Frontend Development</h3>
+                        <p>I specialize in creating responsive, interactive web applications using modern technologies and best practices.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Creative Problem Solving</h3>
+                        <p>I love tackling complex challenges and finding innovative solutions that enhance user experience.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="card-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Continuous Learning</h3>
+                        <p>Technology evolves rapidly, and I'm committed to staying current with the latest trends and tools.</p>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5">0</div>
+                        <div class="stat-label">Technologies</div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class ="nav-links">
-                    <li><a href="#about">About </a></li>
-                    <li><a href="#experience">Experience</a> </li>
-                    <li><a href="#project">Project </a></li>
-                    <li><a href="#contact">Contact</a> </li>
-                </ul> 
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Explore My</span>
+                <h2 class="section-title">Skills & Experience</h2>
             </div>
-        </nav>
-        <P>Copyright&#169;2025 Eyosiyas.All Rights Reserved</P>
+            <div class="skills-content">
+                <div class="skills-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <span class="skill-name">React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h3 class="category-title">Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-sass"></i>
+                            </div>
+                            <span class="skill-name">SASS</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <span class="skill-name">Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Browse My Recent</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/eyosiyas17/Digital_Marketing_Agency" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://digitalagecy.netlify.app/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Digital Marketing Agency</h3>
+                        <p class="project-description">
+                            A modern, responsive website for a digital marketing agency featuring smooth animations and contemporary design.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-featured e-commerce solution with user authentication, shopping cart, and payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://github.com" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Interactive dashboard for data visualization with real-time updates and responsive charts.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">D3.js</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:eyosib84@gmail.com">eyosib84@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://www.linkedin.com/in/eyosiyas-bizuayehu-8383b1262/" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/eyosiyas17" target="_blank">View my work</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formspree.io/f/myzwjkpo" 
+          method="POST"
+          autocomplete="off">
+                        <div class="form-group">
+                            <input type="text" name="name" required>
+                            <label>Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" required>
+                            <label>Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" required></textarea>
+                            <label>Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Add floating shapes to contact section -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">EYOSIYAS</span>
+                </div>
+                <div class="footer-links">
+                    <ul class="footer-menu">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+
+                         
+                    </ul>
+                   
+                    
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/eyosiyas17" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eyosiyas-bizuayehu-8383b1262/" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eyosiyas Bizuayehu. All Rights Reserved.</p>
+            </div>
+        </div>
     </footer>
+
     <script src="script.js"></script>
-    
 </body>
 </html>
